@@ -12,5 +12,4 @@ func RegisterPackage(db *gorm.DB, route *gin.Engine) {
 
 	route.GET("/v1/users", userController.GetAll)
 	route.GET("/v1/users/:id", userController.GetByID)
-	route.POST("/v1/users/login", userController.Login)
 }
